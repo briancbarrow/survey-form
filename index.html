@@ -13,11 +13,11 @@
     <p id="description">This is a short survey so we know how the meetup group is doing.</p>
 
     <form id="survey-form">
-        <label for="name">Name:</label>
+        <label for="name" id="name-label">Name:</label>
         <input id="name" required type="text" placeholder="Ex: Brian Barrow">
-        <label for="email" type="text">Email:</label>
+        <label for="email" type="text" id="email-label">Email:</label>
         <input id="email" required type="email" placeholder="Ex: brian@awesome.com">
-        <label for="number">Favorite Number:</label>
+        <label for="number" id="number-label">Favorite Number:</label>
         <input id="number" required type="number" min="0" max="500" placeholder="Ex: 33">
 
         <label for="dropdown">What is your programming experience?</label>
@@ -28,7 +28,23 @@
             <option value="God">God</option>
         </select> 
 
-        <button type="submit">this button submits the form</button>
+        <p>Do you like to code with light or dark theme?</p>
+        <label for="light">
+            <input id="light" type="radio" name="light-dark" value="light">Light
+        </label>
+        <label for="dark">
+            <input id="dark" type="radio" name="light-dark" value="dark">Dark
+        </label>
+
+        <p>What are you favorite Star Wars trilogy</p>
+        <label for="original"><input id="original" type="checkbox" name="starWars" value="Original">Original</label>
+        <label for="prequels"><input id="prequels" type="checkbox" name="starWars" value="Prequels">Prequels</label>
+        <label for="new"><input id="new" type="checkbox" name="starWars" value="New">New</label>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" placeholder="Additional Comments:"></textarea>
+
+        <button id="submit" type="submit">this button submits the form</button>
     </form>
 </body>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
