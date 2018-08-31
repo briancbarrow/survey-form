@@ -3,6 +3,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-family: 'Muli', sans-serif;
+
 }
 form {
     text-align: center;
@@ -14,3 +16,30 @@ form {
 input:invalid {
     color: red;
 }
+input, select, textarea {
+    min-width: 60px;
+    margin-left: auto;
+    flex: 0.6 1 100px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+}
+
+form#survey-form {}
+
+label {
+    margin-right: 20px;
+    text-align: right;
+    flex: 1 1 100px;
+}
+
+span.help-text {
+    display: none;
+}
+
+select {}
